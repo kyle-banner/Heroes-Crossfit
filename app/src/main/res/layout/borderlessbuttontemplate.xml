@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:listPreferredItemHeightSmall"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    android:id="@+id/LLForSavedWODs"
+    android:divider="?android:dividerVertical"
+    android:dividerPadding="8dp"
+    android:gravity="center"
+    android:animateLayoutChanges="true">
+        <Button android:id="@+id/date_button"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            style="?android:buttonBarButtonStyle"
+            android:animateLayoutChanges="true"/>
+        <Button xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:height="100dp"
+            android:textSize="22sp"
+            style="?android:buttonBarButtonStyle"
+            android:id="@+id/textFieldPartOfButton"
+            android:textColor="#000000"
+            android:layout_weight=".2"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:layout_gravity="center_horizontal|bottom|top"
+            android:gravity="left|center_vertical"
+            android:animateLayoutChanges="true"/>
+        <!-- A button that, when pressed, will delete this list item row from its container. -->
+        <ImageButton android:id="@+id/delete_button"
+            android:layout_width="50dp"
+            android:visibility="gone"
+            android:background="@color/red"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_list_remove_white"
+            android:onClick="deleteSavedWOD"
+            android:contentDescription="@string/action_remove_item"
+            android:animateLayoutChanges="true"/>
+
+</LinearLayout>
+

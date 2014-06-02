@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.ClosedLoopDev.HCF.heroescrossfit_2.app" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name="app.ClosedLoopDev.HCF.heroescrossfit_2.app.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="app.ClosedLoopDev.HCF.heroescrossfit_2.app.DisplayTodaysWODActivity"
+            android:label="Today&apos;s WOD"
+            android:parentActivityName="app.ClosedLoopDev.HCF.heroescrossfit_2.app.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="app.ClosedLoopDev.HCF.heroescrossfit_2.app.DisplaySavedWODsActivity"
+            android:label="My Saved WODs"
+            android:parentActivityName="app.ClosedLoopDev.HCF.heroescrossfit_2.app.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="app.ClosedLoopDev.HCF.heroescrossfit_2.app.DisplaySavedWODDetailActivity"
+            android:label="View Detail/Edit WOD"
+            android:parentActivityName="app.ClosedLoopDev.HCF.heroescrossfit_2.app.DisplaySavedWODsActivity" >
+            <meta-data
+                android:name="app.ClosedLoopDev.HCF.heroescrossfit_2.app.DisplaySavedWODsActivity"
+                android:value="DisplaySavedWODsActivity" />
+        </activity>
+        <activity
+            android:name="app.ClosedLoopDev.HCF.heroescrossfit_2.app.DisplayMyPRsActivity"
+            android:label="My PRs"
+            android:parentActivityName="app.ClosedLoopDev.HCF.heroescrossfit_2.app.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name="app.ClosedLoopDev.HCF.heroescrossfit_2.app.DisplayTypeInWODActivity"
+            android:label="Type In WOD"
+            android:parentActivityName="app.ClosedLoopDev.HCF.heroescrossfit_2.app.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
